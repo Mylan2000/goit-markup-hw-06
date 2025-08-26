@@ -37,17 +37,89 @@
                 <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
     </div>
+
+     <div class="mobile-menu" data-menu >
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="svg-icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+            <li class="nav-item">
+              <a class="nav-links current" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item"><a class="nav-links" href="">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-links" href="">Contacts</a></li>
+          </ul>
+          </nav>
+
+          <address class="contacts-addressa">
+          <ul class="contacts-listt">
+              <li class="contacts-item">
+              <a class="contacts-links" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-links" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+          <div> 
+            <ul class="mobile-social-networks">
+                  <li class="mobile-icons-conteiner">
+                    <a href="" class="mobile-icons-social-networks">
+                      <svg class="svg-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-icons-conteiner">
+                    <a href="" class="mobile-icons-social-networks">
+                      <svg class="svg-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-icons-conteiner">
+                    <a href="" class="mobile-icons-social-networks">
+                      <svg class="svg-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-icons-conteiner">
+                    <a href="" class="mobile-icons-social-networks">
+                      <svg class="svg-icons" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </div>
+
     </header>
 
     <main>
         <!-- slogan -->
-        <section class="page-section-one section">
+        <section class="page-section-one">
         <div class="container container-section-one">
             <h1 class="slogan-title">
                 Effective Solutions for Your Business
             </h1>
-            <button class="button" type="button">Order Service</button>
+            <button class="button" type="button" data-modal-open>Order Service</button>
         </div>
         </section>
         <!-- advantages -->
@@ -99,7 +171,7 @@
             </div>
         </section>
         <!-- Team -->
-        <section class="page-team section">
+        <section class="page-team">
             <div class="container">
             <h2 class="our-team-title">Our Team</h2>
             <ul class="card-set-team">
@@ -255,7 +327,7 @@
             </div>
         </section>
         <!--our-portfolio-->
-        <section class="page-portfolio section">
+        <section class="page-portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="card-set-portfolio">
@@ -438,7 +510,7 @@
             </li>
           </ul>
         </div>
-                <div class="subscribe-conteiner">
+        <div class="subscribe-conteiner">
           <p class="subscribe-text-conteiner">Subscribe</p>
           <form class="email-form">
             <label class="email-form-label">
@@ -467,7 +539,7 @@
         <form>
 
           <div class="modal-form-div">
-            <label class="modal-name-label" for="user-name">Name </label>
+            <label class="modal-name-label" for="user-name">Name</label>
             <div class="label-input-icon">
               <input
                 class="modal-form-input"
@@ -522,7 +594,7 @@
 
           <div class="modal-form-checkbox">
             <input
-              class="visually-hidden"
+              class="visually-hiddenn"
               id="user-privacy"
               type="checkbox"
               value="true"
@@ -543,6 +615,9 @@
         </form>
       </div>
     </div>
-     <script src="./js/modal.js"></script>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
