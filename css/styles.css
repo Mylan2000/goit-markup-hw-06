@@ -139,19 +139,18 @@ padding: 0 15px;
     position: relative;
   }
 
-  .nav-link.current::after {
-    content: '';
-
+  .nav-link.nav-link.current::after {
+    content: "";
     position: absolute;
     left: 0;
     bottom: -1px;
-
     width: 100%;
     height: 4px;
     border-radius: 2px;
-
     background-color: #404bbf;
   }
+
+
 
   .contacts {
     font-style: normal;
@@ -175,9 +174,9 @@ padding: 0 15px;
   }
 
   .nav-link:hover,
-  .nav-link:focus,
+  .nav-link:focus-visible,
   .contacts-link:hover,
-  .contacts-link:focus,
+  .contacts-link:focus-visible,
   .nav-link.current {
     color: #404bbf;
   }
@@ -285,28 +284,19 @@ padding: 0 15px;
 .nav-links.current {
   position: relative;
 }
-.nav-links.current::after {
-  content: "";
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  background-color: #404bbf;
-}
+
 .nav-links:hover,
-.nav-links:focus,
+.nav-links:focus-visible,
 .contacts-links:hover,
-.contacts-links:focus,
+.contacts-links:focus-visible,
 .nav-links.current {
   color: #404bbf;
 }
-.contacts-addressa {
+.contacts-address {
   font-style: normal;
   display: block;
 }
-.contacts-listt {
+.contacts-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -372,11 +362,8 @@ padding: 0 15px;
   background-color: #2e2f42;
   padding-top: 72px;
   padding-bottom: 72px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-  url(../images/people-office.jpg);
+  
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -455,6 +442,10 @@ padding: 0 15px;
 background-color: #404BBF;
 }
 
+.button:focus-visible {
+  background-color: #404bbf;
+}
+
 .button:hover {
     color: #fff;
     background-color: #404bbf;
@@ -467,13 +458,6 @@ background-color: #404BBF;
 
     padding-top: 112px;
     padding-bottom: 112px;
-
-
-    background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg)
   }
   
   .slogan-title {
@@ -582,6 +566,10 @@ background-color: #404BBF;
   .section .advantages-list {
      text-align: start;
   }
+
+  .advantages-list-icons-conteiner {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -687,7 +675,7 @@ background-color: #404BBF;
 .items-social-networks {
   display: flex;
   justify-content: center;
-  margin: 0 16px;
+
   gap: 24px;
 }
 .icons-conteiner {
@@ -711,6 +699,11 @@ background-color: #404BBF;
   background-color: #404bbf;
 }
 
+.icons-social-networks:focus-visible {
+  background-color: #404bbf;
+  outline: 2px solid transparent;
+}
+
 .svg-icons {
   fill: #f4f4fd;
 }
@@ -721,7 +714,7 @@ background-color: #404BBF;
   .card-set-team {
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     gap: 64px 24px;
   }
@@ -950,11 +943,9 @@ background-color: #404BBF;
   padding-left: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: rgba(255, 255, 255 1);
+  color: rgba(255, 255, 255, 1);
 }
-.input-field-email::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .submit-subscribe {
   min-width: 165px;
   height: 40px;
@@ -973,6 +964,14 @@ background-color: #404BBF;
   border: none;
   border-radius: 4px;
 }
+
+.submit-subscribe:hover,
+.submit-subscribe:focus-visible {
+  background-color: #404bbf;
+  color: #fff;
+  outline: 2px solid transparent;
+}
+
 .svg-icons-frame {
   margin-left: 16px; 
   fill: currentColor;
@@ -985,7 +984,7 @@ background-color: #404BBF;
     flex-wrap: wrap;
     align-items: baseline;
     gap: 72px 24px;
-    justify-content: center;
+   
     margin: 0 auto;
 }
   .footer-text-container {
@@ -1038,13 +1037,13 @@ background-color: #404BBF;
     margin-right: 80px;
   }
   .input-field-email {
-    border: 1px solid rgba #fff;
+    border: 1px solid rgba(255, 255, 255);
   }
   .input-field-email::placeholder {
-    color: rgba #fff;
+    color: rgba(255, 255, 255);
   }
   .input-field-email::placeholder {
-    color: rgba #fff;
+    color: rgba(255, 255, 255);
   }
 }
   /* #endregion footer */
@@ -1167,6 +1166,11 @@ background-color: #404BBF;
   margin-bottom: 8px;
   display: flex;
   flex-direction: column;
+}
+
+.icons-social-networks-footer:focus-visible {
+  background-color: #31d0aa;
+  outline: 2px solid transparent;
 }
 
 .modal-name-label {
@@ -1303,13 +1307,24 @@ background-color: #404BBF;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.send-button:hover,
+.send-button:focus-visible {
+  background-color: #404bbf;
+  color: #fff;
+  outline: 2px solid transparent;
+}
+
+.modal form {
+  display: flex;
+  justify-content: center;
+}
 
 .privacy_policy {
   color: #4d5ae5;
   text-decoration: underline;
 }
   
-.visually-hiddenn {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1328,7 +1343,9 @@ background-color: #404BBF;
     padding-right: 24px;
     padding-left: 24px;
   }
-  .send-button {
-    transform: translateX(50%);
+
+  .mobile-icons-social-networks:focus-visible {
+    background-color: #404bbf;
+    outline: 2px solid transparent ;
   }
 }
