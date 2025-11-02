@@ -304,7 +304,7 @@ padding: 0 15px;
   font-style: normal;
   display: block;
 }
-.contacts-list {
+.contacts-listt {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -949,7 +949,7 @@ background-color: #404BBF;
   display: flex;
   align-items: center;
 }
-.input-field-emaill {
+.input-field-email {
   width: 288px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -962,7 +962,7 @@ background-color: #404BBF;
   border-radius: 4px;
   color: rgba(255, 255, 255);
 }
-.input-field-emaill::placeholder {
+.input-field-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .submit-subscribe {
@@ -1019,7 +1019,7 @@ background-color: #404BBF;
     flex-direction: row;
     gap: 24px;
   }
-  .input-field-emaill {
+  .input-field-email {
     width: 264px;
   }
 
@@ -1044,13 +1044,13 @@ background-color: #404BBF;
   .social-media-conteiner {
     margin-right: 80px;
   }
-  .input-field-emaill {
+  .input-field-email {
     border: 1px solid rgba(255, 255, 255);
   }
-  .input-field-emaill::placeholder {
+  .input-field-email::placeholder {
     color: rgba(255, 255, 255);
   }
-  .input-field-emaill::placeholder {
+  .input-field-email::placeholder {
     color: rgba(255, 255, 255);
   }
 }
@@ -1309,3 +1309,4 @@ background-color: #404BBF;
     padding-left: 38px;
   }
 }
+  /* #endregion modal */
